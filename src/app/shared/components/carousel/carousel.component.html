@@ -1,0 +1,26 @@
+
+
+<p-carousel
+[value]="items"
+[numVisible]="1"
+[numScroll]="1"
+[circular]="true"
+[responsiveOptions]="responsiveOptions"
+autoplayInterval="5000"
+
+>
+  <ng-template let-elemento pTemplate="item" >
+    <div class="border-1 surface-border border-round mt-8 m-2 p-3 flex justify-content-start" >
+      <div class="mb-3">
+        <div class="relative mx-auto">
+          <a [href]="elemento.link"><img  [src]="elemento.image" [alt]="elemento.title.first" class="w-full h-30rem border-round">
+          </a>
+          <h3>{{elemento.title.second}}</h3>
+          <p>{{elemento.subtitle}}</p>
+          <p>{{elemento.link}}</p>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
+

@@ -1,34 +1,51 @@
 
+<shared-toolbar>
+</shared-toolbar>
 
-<div id="index" class="background-container-carousel w-screen h-screen bg-black-alpha-20">
-  <shared-toolbar class=""></shared-toolbar>
-  <shared-carousel [items]="carouselData"></shared-carousel>
-</div>
+<shared-carousel
+[items]="carouselData"
+id="index"
+class="background-container-carousel w-screen h-screen bg-black-alpha-20">
+</shared-carousel>
 
-<div id="cotizacion" class="background-container-cotizacion w-screen h-screen bg-black-alpha-40">
-<dashboard-cotizacion></dashboard-cotizacion>
-</div>
 
-<div class="w-screen h-screen bg-black-alpha-20">
-<!-- TODO: aqui va el marcas -->
+<dashboard-cotizacion
+id="cotizacion"
+class="background-container-cotizacion w-screen h-screen">
+</dashboard-cotizacion>
 
-</div>
-<div id="about-us" class="w-screen h-screen bg-black-alpha-40">
-<dashboard-about-us></dashboard-about-us>
-</div>
+
+<dashboard-marcas
+id="marcas"
+class="background-container-carousel">
+</dashboard-marcas>
+
+
+
+<dashboard-about-us
+id="about-us"
+class="w-screen h-screen bg-black-alpha-40">
+</dashboard-about-us>
+
+
 <div class="w-screen h-screen bg-black-alpha-20">
 <!-- TODO: aqui va el sucursal -->
-
 </div>
 
-<div id="contacto" class="w-screen h-screen bg-black-alpha-40">
-<dashboard-contacto></dashboard-contacto>
-</div>
 
-<div class="w-screen h-screen bg-black-alpha-20">
+<dashboard-contacto
+id="contacto"
+class="background-container-contacto"
+>
+</dashboard-contacto>
+
+
+<div class="relative  h-screen bg-black-alpha-20">
 <!-- TODO: aqui va el politicas -->
-
 </div>
+
+<shared-footer>
+</shared-footer>
 
 
 

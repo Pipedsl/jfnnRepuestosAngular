@@ -6,11 +6,12 @@ import { LoginRequest } from '@root/auth/interface/auth.interface';
 import { MessageService } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { RippleModule } from 'primeng/ripple';
 
 @Component({
-  selector: 'app-login',
+  selector: 'auth-login',
   standalone: true,
-  imports: [FormsModule, InputTextModule, ButtonModule],
+  imports: [FormsModule, InputTextModule, ButtonModule, RippleModule],
   providers: [MessageService] ,
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
@@ -30,5 +31,9 @@ export class LoginComponent {
         this.router.navigate(['/dashboard']);
       }
     );
+  }
+
+  volver(){
+    this.router.navigate(['/']);
   }
 }

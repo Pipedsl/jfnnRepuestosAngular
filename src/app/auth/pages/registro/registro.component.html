@@ -1,17 +1,23 @@
 
-    <div class="card contact-form border-round-2xl bg-white text-black-alpha-80 shadow-8 opacity-90">
+    <div class="registro-container">
+    <div class="card">
       <div>
-        <img src="assets/images/banner/imagen1.jpg" alt="" class="w-28rem h-8rem">
+        <img src="assets/images/banner/imagen1.jpg" alt="" class="w-full h-10rem">
       </div>
-      <h2>Contáctanos</h2>
+      <h2>Cotiza con nosotros</h2>
+
       <div class="p-fluid">
         <div class="field">
           <label for="nombre">Nombre</label>
           <input id="nombre" type="text" pInputText [(ngModel)]="nombre" />
         </div>
         <div class="field">
-          <label for="rut">Rut</label>
-          <input id="rut" type="text" pInputText [(ngModel)]="rut" />
+          <label for="apellido">Apellido</label>
+          <input id="apellido" type="text" pInputText [(ngModel)]="apellido" />
+        </div>
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" type="text" pInputText [(ngModel)]="username" />
         </div>
         <div class="field">
           <label for="email">Email</label>
@@ -21,11 +27,9 @@
           <label for="telefono">Teléfono</label>
           <input id="telefono" type="text" pInputText [(ngModel)]="telefono" />
         </div>
-        <div class="field">
-          <label for="mensaje">Escribe un mensaje</label>
-          <textarea id="mensaje" pInputText [(ngModel)]="mensaje" placeholder="Escribe un mensaje"></textarea>
-        </div>
         <button pButton pRipple type="button" label="Enviar" (click)="contacto()"></button>
+              <button pButton pRipple type="button" label="Volver" (click)="volver()" class="bg-black-alpha-70 mt-3"></button>
       </div>
-    </div>
+      </div>
+
 

@@ -24,3 +24,16 @@
   color: white; /* Opcional: para hacer el texto blanco */
 }
 
+.background-container-contacto {
+  background-image: url('/assets/images/backgrounds/LuK_logo.png');
+  background-size: auto; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+  display: flex; /* Opcional: para centrar el contenido */
+  justify-content: center; /* Opcional: para centrar el contenido */
+  align-items: center; /* Opcional: para centrar el contenido */
+  color: white; /* Opcional: para hacer el texto blanco */
+}
+

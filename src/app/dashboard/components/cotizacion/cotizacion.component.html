@@ -1,1 +1,46 @@
-<p>cotizacion works!</p>
+<!--
+<div class="container w-auto h-auto bg-black-alpha-60">
+    <div class=""> -->
+    <div class="card contact-form border-round-3xl bg-white text-black-alpha-90 shadow-8 opacity-90">
+      <div>
+        <img src="assets/images/banner/imagen1.jpg" alt="" class="w-full h-10rem">
+      </div>
+      <h2>Cotiza con nosotros</h2>
+
+      <div class="p-fluid">
+        <div class="formgrid grid">
+        <div class="info-customer field col-6">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" pInputText [(ngModel)]="nombre" />
+          <label for="rut">Rut</label>
+          <input id="rut" type="text" pInputText [(ngModel)]="rut" />
+          <label for="email">Email</label>
+          <input id="email" type="text" pInputText [(ngModel)]="email" />
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" type="text" pInputText [(ngModel)]="telefono" />
+          <label for="direccion">Dirección</label>
+          <input id="direccion" type="text" pInputText [(ngModel)]="direccion" />
+        </div>
+
+        <div class="info-vehicle field col-6">
+          <label for="marca">Marca</label>
+          <input id="marca" type="text" pInputText [(ngModel)]="marca" />
+          <label for="modelo">Modelo</label>
+          <input id="modelo" type="text" pInputText [(ngModel)]="modelo" />
+          <label for="anio">Año</label>
+          <input id="anio" type="text" pInputText [(ngModel)]="anio" />
+          <label for="chasis">Chasis</label>
+          <input id="chasis" type="text" pInputText [(ngModel)]="chasis" />
+        </div>
+        </div>
+
+
+        <div class="field">
+          <label for="mensaje">Escribe un mensaje</label>
+          <textarea id="mensaje" pInputText [(ngModel)]="mensaje" placeholder="Escribe un mensaje"></textarea>
+        </div>
+        <button pButton pRipple type="button" label="Enviar" (click)="cotizacion()"></button>
+      </div>
+      </div>
+
+

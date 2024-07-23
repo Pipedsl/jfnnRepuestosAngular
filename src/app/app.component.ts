@@ -7,11 +7,13 @@ import { RippleModule } from 'primeng/ripple';
 
 import { ButtonModule } from 'primeng/button';
 import { PrimeNGConfig } from 'primeng/api';
+import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RippleModule, ButtonModule ],
+  imports: [RouterOutlet, RippleModule, ButtonModule, ToolbarComponent, FooterComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

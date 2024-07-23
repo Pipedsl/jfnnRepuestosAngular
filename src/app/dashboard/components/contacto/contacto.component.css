@@ -1,0 +1,9 @@
+.contact-form {
+  max-width: 500px; /* ancho máximo del formulario */
+  margin: 0px auto; /* margen superior e inferior de 40px y centrado horizontalmente */
+  padding: 20px; /* padding interior del formulario */
+  background-color: #f9f9f9; /* fondo del formulario */
+  border: 1px solid #ddd; /* borde del formulario */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra del formulario */
+}
+

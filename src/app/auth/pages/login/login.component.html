@@ -1,5 +1,8 @@
 <div class="login-container">
   <div class="card">
+    <div>
+      <img src="assets/images/banner/imagen1.jpg" alt="" class="w-15rem h-8rem">
+    </div>
     <h2>Iniciar sesión</h2>
     <div class="p-fluid">
       <div class="field">
@@ -10,7 +13,9 @@
         <label for="password">Contraseña</label>
         <input id="password" type="password" pInputText [(ngModel)]="password" />
       </div>
-      <button pButton type="button" label="Login" (click)="login()"></button>
+      <button pButton pRipple type="button" label="Login" (click)="login()"></button>
+      <button pButton pRipple type="button" label="Volver" (click)="volver()" class="bg-black-alpha-70 mt-3"></button>
     </div>
+
   </div>
 </div>

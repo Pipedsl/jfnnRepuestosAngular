@@ -1,0 +1,28 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007ad9;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 30px 15px;
+        }
+        .card-header {
+            background-color: #007ad9;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .card-content {
+            padding: 20px;
+            color: #333;
+        }
+        p {
+            margin: 0;
+        }

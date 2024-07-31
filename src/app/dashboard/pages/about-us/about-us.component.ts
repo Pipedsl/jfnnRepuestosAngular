@@ -6,7 +6,7 @@ import { ButtonModule } from 'primeng/button';
   standalone: true,
   imports: [ButtonModule],
   templateUrl: './about-us.component.html',
-  styles: ``
+  styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent {
 

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '@root/auth/services/auth.service';
 import { Contacto } from '@root/dashboard/interfaces/contacto.interface';
 import { ContactoService } from '@root/dashboard/services/contacto.service';
 import { MessageService } from 'primeng/api';

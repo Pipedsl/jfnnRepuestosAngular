@@ -9,6 +9,8 @@ import { FooterComponent } from '@root/shared/components/footer/footer.component
 import { ToolbarComponent } from '@root/shared/components/toolbar/toolbar.component';
 import { CAROUSEL_DATA_ITEMS } from '@root/shared/constants/carousel.const';
 import { ICarouselItem } from '@root/shared/interfaces/Icarousel-item.metadata';
+import { SucursalesComponent } from "../../pages/sucursales/sucursales.component";
+import { PoliticasComponent } from "../../pages/politicas/politicas.component";
 
 
 @Component({
@@ -22,8 +24,10 @@ import { ICarouselItem } from '@root/shared/interfaces/Icarousel-item.metadata';
     CotizacionComponent,
     ContactoComponent,
     FooterComponent,
-    MarcasComponent
-    ],
+    MarcasComponent,
+    SucursalesComponent,
+    PoliticasComponent
+],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })

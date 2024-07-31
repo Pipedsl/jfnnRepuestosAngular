@@ -1,8 +1,12 @@
 <footer class=" flex w-screen h-5rem">
 
-<div class="footer-content flex-1 w-screen align-content-center">
-    <p-menubar [model]="items" >
-      <h4>Designed by Pipedsl</h4>
+<div class="footer-content flex-1 w-screen align-content-center" >
+    <p-menubar
+    styleClass="bg-pink-100  z-5  w-full z-5 shadow-8 opacity-80 text-white"
+    [style]="{ 'background-image': 'linear-gradient(to right, var(--purple-200), var(--gray-900))' }"
+    [model]="items">
+
+      <a href="https://github.com/Pipedsl" class="no-underline text-white"><h4>Designed by Pipedsl</h4></a>
     </p-menubar>
 </div>
 

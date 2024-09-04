@@ -9,4 +9,6 @@ export const environments = {
     endpoint: 'https://sfo3.digitaloceanspaces.com',
     bucket: 'jfnnstorage',
   }
+
 }
+  console.log("se sube?");

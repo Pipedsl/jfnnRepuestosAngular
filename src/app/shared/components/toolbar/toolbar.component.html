@@ -1,46 +1,35 @@
 <div class="card py-2">
-<p-toolbar
+  <p-toolbar
     styleClass="bg-pink-100 fixed z-5 top-0 w-full z-5 shadow-8 opacity-80"
     [style]="{ 'border-radius': '3rem', 'background-image': 'linear-gradient(to right, var(--pink-700), var(--purple-900))' }">
     <ng-template pTemplate="start">
-        <img src="https://jfnnstorage.sfo3.cdn.digitaloceanspaces.com/Banners/logoJfnn.jpg" class="h-4rem border-round-2xl" />
+      <img src="https://jfnnstorage.sfo3.cdn.digitaloceanspaces.com/Banners/logoJfnn.jpg" class="h-4rem border-round-2xl" />
     </ng-template>
 
     <ng-template pTemplate="center">
-            <div class="flex flex-wrap align-items-center justify-content-between">
-                <button pButton pRipple (click)="goToSection('index')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-home text-2xl">Home</i>
-                </button>
-                <button (click)="goToSection('cotizacion')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-shopping-cart text-2xl">Cotizar</i>
-                </button>
-                <button (click)="goToSection('marcas')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-tags text-2xl">Marcas</i>
-                </button>
-                <button (click)="goToSection('about-us')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-info-circle text-2xl">Nosotros</i>
-                </button>
-                <button (click)="goToSection('sucursal')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-map-marker text-2xl">Sucursales</i>
-                </button>
-                <button (click)="goToSection('contacto')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-envelope text-2xl">Contacto</i>
-                </button>
-                <button (click)="goToSection('politicas')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200">
-                    <i class="pi pi-file text-2xl">Politicas</i>
-                </button>
-            </div>
-        </ng-template>
-
-    <ng-template pTemplate="end">
-        <div class="flex align-items-center gap-2">
-            <p-avatar
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-                shape="circle" />
-            <span class="font-bold text-bluegray-50">
-                Amy Elsner
-            </span>
-        </div>
+      <div class="flex flex-wrap align-items-center justify-content-between gap-3"> <!-- gap añadido -->
+        <button pButton pRipple (click)="goToSection('index')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-home text-2xl">Home</i>
+        </button>
+        <button (click)="goToSection('cotizacion')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-shopping-cart text-2xl">Cotizar</i>
+        </button>
+        <button (click)="goToSection('marcas')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-tags text-2xl">Marcas</i>
+        </button>
+        <button (click)="goToSection('about-us')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-info-circle text-2xl">Nosotros</i>
+        </button>
+        <button (click)="goToSection('sucursal')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-map-marker text-2xl">Sucursales</i>
+        </button>
+        <button (click)="goToSection('contacto')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-envelope text-2xl">Contacto</i>
+        </button>
+        <button (click)="goToSection('politicas')" class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-auto border-round-2xl hover:bg-white-alpha-10 transition-all transition-duration-200 p-mr-2">
+          <i class="pi pi-file text-2xl">Politicas</i>
+        </button>
+      </div>
     </ng-template>
-</p-toolbar>
+  </p-toolbar>
 </div>

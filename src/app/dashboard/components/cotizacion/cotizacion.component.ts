@@ -8,11 +8,13 @@ import { InputTextModule } from 'primeng/inputtext';
 import { RippleModule } from 'primeng/ripple';
 import { Cotizacion } from '@root/dashboard/interfaces/cotizacion.interface';
 import { CotizacionService } from '@root/dashboard/services/cotizacion.service';
+import { FileService } from '@root/shared/services/file.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'dashboard-cotizacion',
   standalone: true,
-  imports: [FormsModule, InputTextModule, ButtonModule, RippleModule],
+  imports: [FormsModule, InputTextModule, ButtonModule, RippleModule, CommonModule],
   providers: [MessageService],
   templateUrl: './cotizacion.component.html',
   styleUrl: './cotizacion.component.css'
@@ -28,13 +30,14 @@ export class CotizacionComponent {
   anio: string = '';
   chasis: string = '';
   direccion: string = '';
-  foto: string = 'aun no hay foto';
+  foto: string | null = null;
   estado: boolean = false;
 
   constructor(
     private cotizacionService: CotizacionService,
     private router: Router,
     private messageService: MessageService,
+    private fileService: FileService,
   ){}
 
   cotizacion() {
@@ -63,4 +66,15 @@ export class CotizacionComponent {
     }
   });
 }
+
+  uploadFile(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    const file = input?.files?.[0];
+    if (file) {
+      this.fileService.uploadFile(file, `Cotizaciones/${file.name}`).then(
+        url => this.foto = url,
+        error => console.error('Error uploading file:', error)
+      );
+    }
+  }
 }

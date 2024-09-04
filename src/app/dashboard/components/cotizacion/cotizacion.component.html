@@ -1,9 +1,9 @@
 <!--
 <div class="container w-auto h-auto bg-black-alpha-60">
     <div class=""> -->
-    <div class="card contact-form border-round-3xl bg-white text-black-alpha-90 shadow-8 opacity-90">
+    <div class="card contact-form border-round-3xl bg-white text-black-alpha-90 shadow-8 opacity-90" >
       <div>
-        <img src="assets/images/banner/imagen1.jpg" alt="" class="w-full h-10rem">
+        <img src="https://jfnnstorage.sfo3.cdn.digitaloceanspaces.com/Banners/logoJfnn.jpg" alt="" class="w-full h-10rem">
       </div>
       <h2>Cotiza con nosotros</h2>
 
@@ -29,8 +29,10 @@
           <input id="modelo" type="text" pInputText [(ngModel)]="modelo" />
           <label for="anio">Año</label>
           <input id="anio" type="text" pInputText [(ngModel)]="anio" />
-          <label for="chasis">Chasis</label>
+          <label for="chasis">Chasis o Patente</label>
           <input id="chasis" type="text" pInputText [(ngModel)]="chasis" />
+          <input id="foto" type="file" (change)="uploadFile($event)"/>
+          <img *ngIf="foto" [src]="foto" class="p-mt-2" [ngStyle]="{'width': '100px', 'height': 'auto'}"  alt="Uploaded Image" />
         </div>
         </div>
 

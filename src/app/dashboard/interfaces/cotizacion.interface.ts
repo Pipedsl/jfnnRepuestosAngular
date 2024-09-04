@@ -12,5 +12,5 @@ export interface Cotizacion {
   mensaje: string;
   estado: boolean;
   fecha_creacion?: string;
-  foto: string;
+  foto: string | null;
 }

@@ -1,6 +1,6 @@
 import { ICarouselItem } from "../interfaces/Icarousel-item.metadata";
 
-const JFNN = 'assets/images/banner/imagen1.jpg';
+const JFNN = 'https://jfnnstorage.sfo3.cdn.digitaloceanspaces.com/Banners/logoJfnn.jpg';
 export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
   {
     id: 0,
